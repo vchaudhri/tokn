@@ -1,0 +1,1 @@
+postgresql://postgres:WII4yXta38PMcc2HRu85@wrst.cwa5jotv9vpo.us-west-2.rds.amazonaws.com/wrst

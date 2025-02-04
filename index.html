@@ -1,0 +1,188 @@
+<html>
+<head>
+  <title>Textbook Open Knowledge Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+
+<body>
+  <body>
+  <center>
+    <table width='700' cellpadding='0' bgcolor='#ffffff'>
+      <tr>
+        <td>
+
+  <center>
+  <table width='640'>
+    <tr>
+      <td width='150' align='center' valign='center'>
+        <a href='index.html'><img height='120' src='https://www.stanford.edu/~vinayc/tokn/images/TOKN_Icon.png'></a>
+      </td>
+      <td align='center' valign='center'>
+       <span style='font-size:36px'><img height='120' src='https://www.stanford.edu/~vinayc/tokn/images/TOKN_text.png'></span>
+      </td>
+      <td width='150' align='center' style='font-size:18px'>
+        <img height='120' src='https://www.stanford.edu/~vinayc/tokn/images/Team_Logo.jpg'>
+      </td>
+  </tr>
+ </table>
+  </center>
+
+  <br><br>
+
+<br><br>  
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Overview')">Overview</button>
+  <button class="tablinks" onclick="openCity(event, 'Demonstrations')">Demonstrations</button>
+  <button class="tablinks" onclick="openCity(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openCity(event, 'Evaluations')">Evaluations</button>
+  <button class="tablinks" onclick="openCity(event, 'Partners')">Partners</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us</button>
+</div>
+
+<!-- Tab content -->
+<div id="Overview" class="tabcontent" style="display:block;">
+  <h3> Project Overview </h3>
+  <ol>
+    <li><a href="https://youtu.be/YCt7c5raju0 ">Three minute overview of Textbook Open Knowledge Network</a></li>
+    <li><a href="https://youtu.be/qzXmg5-Qke8 ">Ten minute overview of Textbook Open Knowledge Network</a></li>
+    <li><a href="https://www.stanford.edu/~vinayc/tokn/docs/1. Public_Executive_Summary_v11.pdf">Executive Summary</a></li>
+    <li><a href="https://ash8.wistia.com/medias/xe39ny2im2">About OpenStax</a></li>
+  </ol>
+</div>
+
+<div id="Demonstrations" class="tabcontent">
+  <h3>Intelligent Textbook Demonstrations</h3>
+  <ol>
+    <li><a href="https://www.youtube.com/watch?v=iIBCPVSjECo">Overview of features</a></li>
+    <li><a href="https://www.youtube.com/watch?v=W-odfyjjVVg">Solving homework problems</a></li>
+    <li><a href="https://www.youtube.com/watch?v=FWqmXNvPsmk">Obtaining answers to questions</a></li>
+    <li><a href="https://youtu.be/10nmrJczDu4">Getting ready for an exam</a></li>
+    <li><a href="https://youtu.be/9gDOiu6kf_w">Understanding Protein Structure using Intelligent Textbook</a></li>
+  </ol>
+</div>
+
+<script>
+function myFunction() {
+  var number = parseInt((Math.random() * 1000), 10);
+  var URL = "https://wrst-stage.herokuapp.com/login_prolific?PROLIFIC_PID=" + number + "62d7c8f1fafc0efe4fc4f&SESSION_ID=0t728yugrst&STUDY_ID=5e163219194d29c2e29b5fe1&preview=1";  
+
+ /*   document.getElementById("demo").innerHTML = "<a href="+ URL +    ">Click Here to go to the Tool</a>"; */ 
+    document.getElementById("demo").innerHTML = "<a href=" + "http://54.219.176.175:5000/login_test" + ">Click Here to go to the Tool</a>"; */ 
+    
+  return URL;
+}
+</script>
+
+<div id="Products" class="tabcontent">
+  <h3>Convergence Accelerator Work Products</h3>
+  <ul>
+    <li><a href="https://youtu.be/w5xTPzgZlVU">Demo of the crowdsourcing tool</a></li>
+    <li><a href="http://54.219.176.175:5000/login_test">Crowdsourcing tool for Concept Mapping</a></li>
+    <li>Deep Learning Models for Term and Relation Extraction
+      <ul>
+	<li><a href="https://docs.google.com/presentation/d/1WRWtBeX4I8VLfSueJPNFgogozDkhaKQh1cyclBeWAAg/">An Overview Presentation</a></li>
+	<li><a href="https://github.com/mattboggess/tokn">Github repository</a></li>
+      </ul>
+  </ul>
+</div>
+
+<div id="Evaluations" class="tabcontent">
+  <h3>Evaluations of Intelligent Textbook</h3>
+  <ol>
+    <li><a href="https://www.aaai.org/ojs/index.php/aimagazine/article/view/2486">Laboratory trials of Intelligent Textbook (at SRI International)</a></li>
+    <li><a href="https://journals.sagepub.com/doi/10.1177/0735633120921581">In-class room trial of Intelligent Textbook (at Stockholm University)</a></li>
+  </ol>
+</div>
+
+<div id="Partners" class="tabcontent">
+  <h3>Collaborating Partners</h3>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/lisalockwoodmba/">Lisa Lockwood, Macmillan Learning</a></li>
+    <li><a href="https://www.linkedin.com/in/kuansan-wang-600bbb1/">Kuansan Wang, Microsoft Research</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Ramanathan_V._Guha">R. V. Guha, Google</a></li>
+  </ul>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Please contact us for additional information</h3>
+  <ul>
+    <li><a href="mailto:genesereth@stanford.edu">Michael Genesereth</a></li>
+    <li><a href="mailto:richb@rice.edu">Richard Baraniuk</a></li>
+    <li><a href="mailto:hcheller@stanford.edu">Craig Heller</a></li>
+    <li><a href="mailto:musen@stanford.edu">Mark Musen</a></li>
+    <li><a href="mailto:vinayc@stanford.edu">Vinay K. Chaudhri</a></li>
+  </ul>
+</div>
+
+</td>
+      </tr>
+    </table>
+  </center>
+
+
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+		  
+</body>
